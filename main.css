@@ -81,5 +81,6 @@ h1 {
     left: 5%;
     width: 80%;
     text-align:justify;
-    line-height: 1.5vw
+    line-height: 1.5vw;
+    font-size: .8vw;
 }
