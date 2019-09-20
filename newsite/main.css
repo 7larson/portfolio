@@ -1,0 +1,85 @@
+body {
+    background: #fff;
+    color: #131313;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #e25a52;
+    width: 100%;
+    color: #131313;
+    height: 15%;
+    margin: 0;
+}
+#logo {
+    position: relative;
+    top: 25%;
+    width: 48%;
+    float: left;
+    text-align: right;
+    padding-right: 2%;
+    border-right: 4px solid #000;
+}
+#logo img {
+    height: 50%;
+}
+nav {
+    position: relative;
+    top: 45%;
+    width: 48%;
+    right: 0;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vw;
+    font-weight: normal;
+}
+nav a{
+    text-decoration: none;
+    color: #131313;
+    padding: 0 1% 0 1%;
+    transition: color 0.5s ease;
+}
+nav a:hover {
+    color: #fff;
+    transition: color 0.5s ease;
+}
+main {
+    width: 100%;
+}
+#illus {
+    width: 48%;
+    float: left;
+}
+#illus img{
+    width: 90%;
+}
+#content {
+    width: 48%;
+    float: right;
+    margin-top: 7%;
+}
+h1 {
+    font-size: 1vw
+}
+.titleish {
+    position: relative;
+    background: #131313;
+    width: 80%;
+    left: 5%;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: .09vw;
+    text-align: center;
+    vertical align: center;
+    padding-top: 5%;
+    padding-bottom: 5%
+}
+#content p {
+    position: relative;
+    left: 5%;
+    width: 80%;
+    text-align:justify;
+    line-height: 1.5vw
+}
