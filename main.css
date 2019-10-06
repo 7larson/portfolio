@@ -125,8 +125,10 @@ h2 {
 .btn:active {
     top: 2px;
 }
-p {
+p.work {
     width: 60%;
     text-align: justify;
     margin: auto;
+    line-height: 1.5vw;
+    font-size: .8vw;
 }
