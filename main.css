@@ -112,6 +112,7 @@ h2 {
     display: inline-block;
     font-weight:500;
     position:relative;
+    width: 180px;
 }
 .btn a {
     text-decoration: none;
