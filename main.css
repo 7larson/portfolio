@@ -134,3 +134,14 @@ p.work {
     font-size: .8vw;
     margin-bottom:1%;
 }
+hr {
+    width: 50%;
+    border-top:2px solid #000;
+}
+.gg-box img:hover {
+    filter: brightness(70%);
+    transition: filter 0.5s ease;
+}
+.gg-box img {
+    transition: filter 0.5s ease;
+}
