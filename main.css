@@ -51,15 +51,17 @@ flex {
     width: 100%;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
-    justify-content: center;
-    
+    flex-direction:row;
+    flex-grow:1;
+    justify-content: space-around;    
+}
+wraper > * {
+    flex: 1 100%;
 }
 #illus {
     width: 45%;
     min-width: 400px;
     float: left;
-    flex: 1 0 45%;
 }
 #illus img{
     width: 95%;
@@ -70,7 +72,6 @@ flex {
     min-width: 400px;
     float: right;
     margin-top: 7%;
-    flex: 0 1 48%;
 }
 h1 {
     font-size: 80%
