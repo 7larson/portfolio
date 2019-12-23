@@ -31,7 +31,7 @@ nav {
     right: 0;
     float: right;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2vw;
+    font-size: 85%;
     font-weight: normal;
 }
 nav a{
@@ -47,20 +47,33 @@ nav a:hover {
 main {
     width: 100%;
 }
+flex {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+    
+}
 #illus {
     width: 45%;
+    min-width: 400px;
     float: left;
+    flex: 1 0 45%;
 }
 #illus img{
-    width: 90%;
+    width: 95%;
+    min-width: 300px;
 }
 #contentmain {
     width: 48%;
+    min-width: 400px;
     float: right;
     margin-top: 7%;
+    flex: 0 1 48%;
 }
 h1 {
-    font-size: 1vw
+    font-size: 80%
 }
 .titleish {
     position: relative;
@@ -70,7 +83,7 @@ h1 {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    letter-spacing: .09vw;
+    letter-spacing: 2px;
     text-align: center;
     vertical align: center;
     padding-top: 5%;
@@ -81,18 +94,21 @@ h1 {
     left: 5%;
     width: 80%;
     text-align:justify;
-    line-height: 1.5vw;
-    font-size: .8vw;
+    line-height: 2.5vh;
+    font-size: 80%;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
 h2 {
-    font-size: 0.8vw;
+    font-size: 80%;
     background: #000;
     color: #fff;
     padding: 0.5%;
     width: 20%;
     margin: 2% auto;
     font-weight: 500;
-    letter-spacing: 0.09vw;
+    letter-spacing: 2px;
     text-align:center;
 }
 #workbuttons {
@@ -130,9 +146,10 @@ p.work {
     width: 60%;
     text-align: justify;
     margin: auto;
-    line-height: 1.5vw;
-    font-size: .8vw;
+    line-height: 2.5vh;
+    font-size: 80%;
     margin-bottom:1%;
+    font-family: 'Montserrat', sans-serif;
 }
 hr {
     width: 50%;
@@ -144,4 +161,11 @@ hr {
 }
 .gg-box img {
     transition: filter 0.5s ease;
+}
+#figma {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 450px;
 }
