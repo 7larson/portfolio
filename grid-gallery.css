@@ -4,19 +4,24 @@ body {
 }
 
 .gg-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-auto-rows: 200px;
-  grid-gap: 8px;
+  line-height: 0;   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   5px;
+  -moz-column-count:    5;
+  -moz-column-gap:      5px;
+  column-count:         5;
+  column-gap:           5px;
 }
 
 .gg-box img {
-  object-fit: cover;
+  width: 100% !important;
+  height: auto !important;
   cursor: pointer;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 10px;
+  padding-bottom: 5px;
 }
 
 .gg-box img:hover {

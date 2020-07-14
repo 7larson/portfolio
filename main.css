@@ -177,6 +177,27 @@ p.work {
     margin-bottom:1%;
     font-family: 'Montserrat', sans-serif;
 }
+p.pricing {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    line-height: 2.5vh;
+    font-size: 80%;
+    margin-bottom:1%;
+    font-family: 'Montserrat', sans-serif;
+}
+p.pricingimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+p.pricingimg2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
 hr {
     width: 50%;
     border-top:2px solid #000;
@@ -220,4 +241,23 @@ hr {
 }
 .work a img:hover {
     opacity: .4;
+}
+.pricing a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+}
+.pricing a:hover {
+   color: #e25a52; 
+}
+.pricingimg img {
+    max-height: 300px;
+}
+.pricingimg2 img {
+    max-height: 500px;
 }
