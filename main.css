@@ -202,6 +202,9 @@ hr {
     width: 50%;
     border-top:2px solid #000;
 }
+.gg-box{
+    margin-top: 5px;
+}
 .gg-box img:hover {
     filter: brightness(70%);
     transition: filter 0.5s ease;
