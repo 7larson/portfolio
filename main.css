@@ -1,12 +1,12 @@
 body {
-    background: #f6f1dc;
-    color: #372b28;
+    background: #fff;
+    color: #131313;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
 header {
-    background: #718265;
+    background: #e25a52;
     width: 100%;
     color: #131313;
     height: 15%;
@@ -19,7 +19,7 @@ header {
     float: left;
     text-align: right;
     padding-right: 2%;
-    border-right: 2px solid #f6f1dc;
+    border-right: 4px solid #000;
 }
 #logo img {
     height: 50%;
@@ -36,12 +36,12 @@ nav {
 }
 nav a{
     text-decoration: none;
-    color: #f6f1dc;
+    color: #131313;
     padding: 0 1% 0 1%;
     transition: color 0.5s ease;
 }
 nav a:hover {
-    color: #e6ba62;
+    color: #fff;
     transition: color 0.5s ease;
 }
 main {
@@ -78,18 +78,17 @@ h1 {
 }
 .titleish {
     position: relative;
-    background: #372b28;
+    background: #131313;
     width: 80%;
     left: 5%;
-    color: #f6f1dc;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
     vertical align: center;
     padding-top: 5%;
-    padding-bottom: 5%;
-    border-radius: 10px;
+    padding-bottom: 5%
 }
 #contentmain p {
     position: relative;
@@ -104,15 +103,14 @@ h1 {
 
 h2 {
     font-size: 80%;
-    background: #372b28;
-    color: #f6f1dc;
+    background: #000;
+    color: #fff;
     padding: 0.5%;
     width: 20%;
     margin: 2% auto;
     font-weight: 500;
     letter-spacing: 2px;
     text-align:center;
-    border-radius: 10px;
 }
 #workbuttons {
     margin: 3% auto;
@@ -124,7 +122,7 @@ h2 {
 
 .btn {
     padding: 2%;
-    border: 2px solid #372b28;
+    border: 2px solid #000;
     text-align: center;
     margin: 1%;
     display: inline-block;
@@ -133,15 +131,14 @@ h2 {
     width: 180px;
     font-family: 'Montserrat', sans-serif;
     font-size: 95%;
-    border-radius: 10px;
 }
 .btn a {
     text-decoration: none;
-    color: #372b28;
+    color: #000;
     transition: color 0.5s ease;
 }
 .btn a:hover {
-    color: #e6ba62;
+    color: #e25a52;
     transition: color 0.5s ease;
 }
 .btn:active {
@@ -149,7 +146,7 @@ h2 {
 }
 .sbtn {
     padding: 2%;
-    border: 2px solid #372b28;
+    border: 2px solid #000;
     text-align: center;
     margin: .5%;
     display: inline-block;
@@ -161,11 +158,11 @@ h2 {
 }
 .sbtn a {
     text-decoration: none;
-    color: #372b28;
+    color: #000;
     transition: color 0.5s ease;
 }
 .sbtn a:hover {
-    color: #e6ba62;
+    color: #e25a52;
     transition: color 0.5s ease;
 }
 .sbtn:active {
@@ -203,7 +200,7 @@ p.pricingimg2 {
 }
 hr {
     width: 50%;
-    border-top:2px solid #372b28;
+    border-top:2px solid #000;
 }
 .gg-box{
     margin-top: 5px;
@@ -233,7 +230,7 @@ hr {
     -o-transition: opacity .5s ease;
 }
 .work a {
-    color: #372b28;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
@@ -243,13 +240,13 @@ hr {
     -o-transition: color .5s ease;
 }
 .work a:hover {
-   color: #e6ba62; 
+   color: #e25a52; 
 }
 .work a img:hover {
     opacity: .4;
 }
 .pricing a {
-    color: #372b28;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
@@ -259,7 +256,7 @@ hr {
     -o-transition: color .5s ease;
 }
 .pricing a:hover {
-   color: #e6ba62; 
+   color: #e25a52; 
 }
 .pricingimg img {
     max-height: 300px;
