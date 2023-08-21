@@ -1,3 +1,11 @@
+/* accent color - change here to change everywhere! */
+header {
+    background: #7a76e8;
+}
+.btn a:hover, .sbtn a:hover, .work a:hover, .pricing a:hover {
+    color: #7a76e8;
+}
+/* end accent color */
 body {
     background: #fff;
     color: #131313;
@@ -6,7 +14,6 @@ body {
 }
 
 header {
-    background: #e25a52;
     width: 100%;
     color: #131313;
     height: 15%;
@@ -55,16 +62,13 @@ flex {
     flex-grow:1;
     justify-content: space-around;    
 }
-wraper > * {
-    flex: 1 100%;
-}
 #illus {
     width: 45%;
     min-width: 400px;
     float: left;
 }
 #illus img{
-    width: 95%;
+    width: 80%;
     min-width: 300px;
 }
 #contentmain {
@@ -86,7 +90,7 @@ h1 {
     font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
-    vertical align: center;
+    vertical-align: center;
     padding-top: 5%;
     padding-bottom: 5%
 }
@@ -138,7 +142,6 @@ h2 {
     transition: color 0.5s ease;
 }
 .btn a:hover {
-    color: #e25a52;
     transition: color 0.5s ease;
 }
 .btn:active {
@@ -162,13 +165,12 @@ h2 {
     transition: color 0.5s ease;
 }
 .sbtn a:hover {
-    color: #e25a52;
     transition: color 0.5s ease;
 }
 .sbtn:active {
     top: 2px;
 }
-p.work {
+div.work {
     width: 60%;
     text-align: justify;
     margin: auto;
@@ -177,40 +179,35 @@ p.work {
     margin-bottom:1%;
     font-family: 'Montserrat', sans-serif;
 }
-p.pricing {
-    width: 60%;
+.work img {
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    margin-top: -10px;
+    transition: 0.5s ease;
+}
+.work img:hover {
+    opacity: .4;
+}
+.work table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.work th, td {
+    width: 325px;
+    height: auto;
     text-align: center;
-    margin: auto;
-    line-height: 2.5vh;
-    font-size: 80%;
-    margin-bottom:1%;
-    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
 }
-p.pricingimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
+.work td {
+    padding-bottom: 20px;
 }
-p.pricingimg2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
+.work span {
+    font-size: 75%;
+    font-weight: lighter;
 }
 hr {
     width: 50%;
     border-top:2px solid #000;
-}
-.gg-box{
-    margin-top: 5px;
-}
-.gg-box img:hover {
-    filter: brightness(70%);
-    transition: filter 0.5s ease;
-}
-.gg-box img {
-    transition: filter 0.5s ease;
 }
 #figma {
     display: block;
@@ -218,16 +215,6 @@ hr {
     margin-right: auto;
     width: 800px;
     height: 450px;
-}
-.work img {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: opacity .5s ease;
-    -moz-transition: opacity .5s ease;
-    -webkit-transition: opacity .5s ease;
-    -o-transition: opacity .5s ease;
 }
 .work a {
     color: #000;
@@ -239,28 +226,16 @@ hr {
     -webkit-transition: color .5s ease;
     -o-transition: color .5s ease;
 }
-.work a:hover {
-   color: #e25a52; 
+footer {
+    width: 100%;
+    font-size: 80%;
 }
-.work a img:hover {
-    opacity: .4;
-}
-.pricing a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: color .5s ease;
-    -moz-transition: color .5s ease;
-    -webkit-transition: color .5s ease;
-    -o-transition: color .5s ease;
-}
-.pricing a:hover {
-   color: #e25a52; 
-}
-.pricingimg img {
-    max-height: 300px;
-}
-.pricingimg2 img {
-    max-height: 500px;
+footer p {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: -5px;
 }
