@@ -1,9 +1,9 @@
 /* accent color - change here to change everywhere! */
 header {
-    background: #7a76e8;
+    background: #9191f2;
 }
 .btn a:hover, .sbtn a:hover, .work a:hover, .pricing a:hover {
-    color: #7a76e8;
+    color: #9191f2;
 }
 /* end accent color */
 body {
