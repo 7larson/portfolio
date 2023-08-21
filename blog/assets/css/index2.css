@@ -43,7 +43,7 @@ p {
 }
 
 a {
-  color: #7a76e8;
+  color: #9191f2;
   text-decoration: inherit;
 }
 a:hover {
@@ -179,14 +179,14 @@ nav a {
 
 .more a {
   border-radius: 2px;
-  border: 1.5px solid #7a76e8;
+  border: 1.5px solid #9191f2;
   padding: 0.4em 0.8em;
   transition: 0.2s background, 0.2s color;
 }
 
 .more a:hover {
   color: #fff;
-  background: #7a76e8;
+  background: #9191f2;
   text-decoration: inherit;
 }
 
