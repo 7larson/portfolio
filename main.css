@@ -33,36 +33,29 @@ header {
         margin-left: auto;
         margin-right: auto;
         margin-top: -20px;
-        left: 0 !important;
     }
     #contentmain p {
         margin-left: auto;
         margin-right: auto;
-        left: 0 !important;
-        text-align: center !important;
+        text-align: center;
     }
     h2 {
-        width: 200px !important;
+        min-width: 50%;
     }
     .work {
-        width: 100% !important;
-        align-items: flex-end !important;
+        min-width: 100%;
     }
     .work img {
-        width: 180px;
+        max-width: 180px;
         border-radius: 5px !important;
         -moz-border-radius: 5px !important;
     }
     .work p {
-        flex: 200px !important;
+        width: 200px;
     }
     #about {
-        width: 80% !important;
         font-size: calc(0.78rem + .1vw);
         text-align: center;
-    }
-    #workbuttons {
-        width: 100% !important;
     }
     h2.first {
         margin-top: 30px;
@@ -74,7 +67,7 @@ header {
     }
     nav a.dot:after {
         content: " ."
-    }
+    }  
 }
 /*end mobile changes*/
 
@@ -149,7 +142,7 @@ flex {
     margin-top: 7%;
 }
 #about {
-    width: 60%;
+    width: calc(60vw + 10%);
     margin-left: auto;
     margin-right: auto;
     line-height: calc(7px + 2.5vh);
@@ -161,7 +154,6 @@ h1 {
     position: relative;
     background: #131313;
     width: 80%;
-    left: 5%;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -173,7 +165,6 @@ h1 {
 }
 #contentmain p {
     position: relative;
-    left: 5%;
     width: 80%;
     line-height: calc(7px + 2.5vh);
     font-size: calc(.8rem + .1vw);
@@ -192,7 +183,6 @@ h2 {
 }
 #workbuttons {
     margin: 3% auto;
-    width: 50%;
     text-align:center;
     position: relative;
     
@@ -239,7 +229,7 @@ h2 {
 }
 .work p {
     text-align: center;
-    flex: 320px;
+    flex: auto;
 }
 .sub {
     display:inline-block;
