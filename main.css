@@ -6,13 +6,84 @@ header {
     color: #9191f2;
 }
 /* end accent color */
+
+/*mobile changes*/
+@media screen and (max-width: 480px) {
+    nav {
+        text-align: center;
+    }
+    nav a {
+        font-size: calc(0.8rem + .1vw);
+        overflow: auto;
+    }
+    #illus img {
+        display: block;
+        width: 20% !important;
+        margin-left: auto;
+        margin-right: auto;
+        float: none !important;
+    }
+    #contentmain {
+        display: block;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .titleish {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20px;
+        left: 0 !important;
+    }
+    #contentmain p {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0 !important;
+        text-align: center !important;
+    }
+    h2 {
+        width: 200px !important;
+    }
+    .work {
+        width: 100% !important;
+        align-items: flex-end !important;
+    }
+    .work img {
+        width: 180px;
+        border-radius: 5px !important;
+        -moz-border-radius: 5px !important;
+    }
+    .work p {
+        flex: 200px !important;
+    }
+    #about {
+        width: 80% !important;
+        font-size: calc(0.78rem + .1vw);
+        text-align: center;
+    }
+    #workbuttons {
+        width: 100% !important;
+    }
+    h2.first {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 393px) {
+    nav {
+        top: 40% !important;
+    }
+    nav a.dot:after {
+        content: " ."
+    }
+}
+/*end mobile changes*/
+
 body {
     background: #fff;
     color: #131313;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
-
 header {
     width: 100%;
     color: #131313;
@@ -38,7 +109,7 @@ nav {
     right: 0;
     float: right;
     font-family: 'Montserrat', sans-serif;
-    font-size: 85%;
+    font-size: calc(.8rem + .1vw);
     font-weight: normal;
 }
 nav a{
@@ -77,8 +148,14 @@ flex {
     float: right;
     margin-top: 7%;
 }
+#about {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: calc(7px + 2.5vh);
+}
 h1 {
-    font-size: 80%
+    font-size: calc(.8rem + .1vw)
 }
 .titleish {
     position: relative;
@@ -98,15 +175,12 @@ h1 {
     position: relative;
     left: 5%;
     width: 80%;
-    text-align:justify;
-    line-height: 2.5vh;
-    font-size: 80%;
+    line-height: calc(7px + 2.5vh);
+    font-size: calc(.8rem + .1vw);
     font-family: 'Montserrat', sans-serif;
 }
-
-
 h2 {
-    font-size: 80%;
+    font-size: calc(0.8rem + .1vw);
     background: #000;
     color: #fff;
     padding: 0.5%;
@@ -123,7 +197,6 @@ h2 {
     position: relative;
     
 }
-
 .btn {
     padding: 2%;
     border: 2px solid #000;
@@ -134,7 +207,7 @@ h2 {
     position:relative;
     width: 180px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 95%;
+    font-size: calc(.8rem + .1vw);
 }
 .btn a {
     text-decoration: none;
@@ -147,88 +220,44 @@ h2 {
 .btn:active {
     top: 2px;
 }
-.sbtn {
-    padding: 2%;
-    border: 2px solid #000;
-    text-align: center;
-    margin: .5%;
-    display: inline-block;
-    font-weight:500;
-    position:relative;
-    width: 150px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 75%;
-}
-.sbtn a {
-    text-decoration: none;
-    color: #000;
-    transition: color 0.5s ease;
-}
-.sbtn a:hover {
-    transition: color 0.5s ease;
-}
-.sbtn:active {
-    top: 2px;
-}
-div.work {
+.work {
     width: 60%;
-    text-align: justify;
-    margin: auto;
-    line-height: 2.5vh;
-    font-size: 80%;
-    margin-bottom:1%;
-    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 .work img {
     border-radius: 20px;
     -moz-border-radius: 20px;
-    margin-top: -10px;
     transition: 0.5s ease;
 }
 .work img:hover {
     opacity: .4;
 }
-.work table {
-    margin-left: auto;
-    margin-right: auto;
-}
-.work th, td {
-    width: 325px;
-    height: auto;
+.work p {
     text-align: center;
-    padding: 5px;
+    flex: 320px;
 }
-.work td {
-    padding-bottom: 20px;
+.sub {
+    display:inline-block;
+    margin-bottom: 5px;
 }
-.work span {
-    font-size: 75%;
-    font-weight: lighter;
+.worktitle {
+    font-size: calc(.8rem + .1vw);
+}
+.sub {
+    font-size: calc(.7rem + .1vw);
 }
 hr {
     width: 50%;
     border-top:2px solid #000;
 }
-#figma {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-    height: 450px;
-}
-.work a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: color .5s ease;
-    -moz-transition: color .5s ease;
-    -webkit-transition: color .5s ease;
-    -o-transition: color .5s ease;
-}
 footer {
     width: 100%;
-    font-size: 80%;
+    font-size: calc(0.6rem + .1vw);
 }
 footer p {
     position: absolute;
