@@ -196,6 +196,124 @@ li:nth-child(5n)::before {
 	filter: grayscale(100%);
 	transition: ease .5s;
 }
+.workflex {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: stretch;
+	justify-content: space-around;
+}
+.work {
+	width: 200px;
+	height: 133px;
+	padding: 7px;
+	line-height: 1.3rem;
+	letter-spacing: .08rem;
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	font-weight: 900;
+}
+.redjacketsbg {
+	background: url('assets/work/redjackets.png') #e47979;
+	background-size: cover;
+	color: transparent;
+	transition: ease .5s;
+}
+.redjacketsbg:hover {
+	background: #e47979;
+	color: #fff;
+	transition: ease .5s;
+}
+.mw3bg {
+	background: url('assets/work/modernwarfare3.png') #fe0000;
+	background-size: cover;
+	color: transparent;
+	transition: ease .5s;
+}
+.mw3bg:hover {
+	background: #fe0000;
+	color: #000;
+	transition: ease .5s;
+}
+.mw2bg {
+	background: url('assets/work/modernwarfare2.png') #16120f;
+	background-size: cover;
+	color: transparent;
+	transition: ease .5s;
+}
+.mw2bg:hover {
+	background: #16120f;
+	color: #7ac32b;
+	transition: ease .5s;
+}
+.ctrbg {
+	background: url('assets/work/crashteamrumbleicon.png') #15668c;
+	background-size: cover;
+	color: transparent;
+	transition: ease .5s;
+}
+.ctrbg:hover {
+	background: #15668c;
+	color: #ffaa32;
+	transition: ease .5s;
+}
+.codvbg {
+	background: url('assets/work/vanguardicon.png') #877d68;
+	background-size: cover;
+	color: transparent;
+	transition: ease .5s;
+}
+.codvbg:hover {
+	background: #877d68;
+	color: #fff;
+	transition: ease .5s;
+}
+.codbocwbg {
+	background: url('assets/work/coldwaricon.png') #dedcd6;
+	background-size: cover;
+	color: transparent;
+	transition: ease .5s;
+}
+.codbocwbg:hover {
+	background: #dedcd6;
+	color: #000;
+	transition: ease .5s;
+}
+.codmwbg {
+	background: url('assets/work/modernwarfareicon.png') #58595e;
+	background-size: cover;
+	color: transparent;
+	transition: ease .5s;
+}
+.codmwbg:hover {
+	background: #58595e;
+	color: #eeeae7;
+	transition: ease .5s;
+}
+.tbinybg {
+	background: url('assets/work/thisbodyisnotyoursicon.png') #020202;
+	background-size: cover;
+	color: transparent;
+	transition: ease .5s;
+}
+.tbinybg:hover {
+	background: #020202;
+	color: #fb702b;
+	transition: ease .5s;
+}
+.ow2bg {
+	background: url('assets/work/overwatch2icon.png') #f9f1f2;
+	background-size: cover;
+	color: transparent;
+	transition: ease .5s;
+}
+.ow2bg:hover {
+	background: #f9f1f2;
+	color: #3999ee;
+	transition: ease .5s;
+}
 .info:hover {
 	filter: grayscale(0%) !important;
 	transition: ease .5s;
@@ -381,15 +499,24 @@ li:nth-child(5n)::before {
 	background: url('assets/logos/contacthover.png') no-repeat center center;
 	transition: ease .5s;
 }
-#page2 h2 {
-	text-align: center;
+.headerflex {
+	display: flex;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	width: 190px;
-	background-image: linear-gradient(to right, #ad8e70, #bd7b7a, #bf7e73, #e2c66d, #90e996);
-	background-clip: text;
-	color: transparent;
+	justify-content: space-around;
+	align-items: center;
+}
+#page2 h2 {
+	text-align: center;
+	background: linear-gradient(to right, #ad8e70, #bd7b7a, #bf7e73, #e2c66d, #90e996);
+	color: #fff;
 	font-size: 1rem;
+	border-radius: 10px;
+	padding: 3px;
+	flex-grow: 3;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 table {
 	width: 90%;
@@ -408,11 +535,14 @@ table img {
 	width: 215px;
 }
 .redjackets {
-	font-weight: 900;
-	color: #757575;
+	color: transparent;
+	transition: ease .5s;
+}
+.work:hover .redjackets {
+	color: #f0f0f0;
 	transition: ease .5s;
 }
 .redjackets:hover {
-	color: #f82727;
+	color: #f82727 !important;
 	transition: ease .5s;
 }
