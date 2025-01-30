@@ -546,3 +546,178 @@ table img {
 	color: #f82727 !important;
 	transition: ease .5s;
 }
+/* testing filters for blog, made on https://egg.design/filtergenerator */
+input:checked + label[for='gamedev'] ~ .css-filters div:not([data-gamedev]),input:checked + label[for='internet'] ~ .css-filters div:not([data-internet]),input:checked + label[for='life'] ~ .css-filters div:not([data-life]){
+     /* here is where you put your css for hiding your filters */
+	animation: hideFilter .8s 1 forwards!important;
+}
+@keyframes hideFilter {
+    50% {
+        transform:scale(0);
+        height:100px;
+        width:100px;
+    }
+    100% {
+        transform:scale(0);
+        width:0;
+        height:0;
+        margin:0;
+    }
+}
+.articlefilters {
+	text-align: center;
+	line-height: 1.3rem;
+	letter-spacing: .08rem;
+}
+/* to select + style all of the elements inside of your filters container, use this: */
+.css-filters > div {
+	width: 200px;
+    height: 133px;
+    position:relative;
+    transition:.6s ease-in-out;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:1rem 1rem 1rem 0;
+    border-radius: 10px;
+    transition:.6s ease-in-out;
+	margin-bottom: 0!important;
+}
+.css-filters a {
+	color: #3f3f3f;
+	font-weight: bold;
+	text-decoration: underline;
+	transition: ease .5s;
+}
+.css-filters a:hover {
+	text-decoration: none;
+	color: #fff;
+	transition: ease .5s;
+}
+.css-filters {
+	display:flex;
+    margin-left: auto;
+	margin-right: auto;
+	width:100%;
+    flex-wrap:wrap;
+    min-height:100px;
+	justify-content: center;
+}
+.articlefilters input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer !important;
+}
+.articlefilters label {
+	font-weight: bold;
+	text-decoration: underline;
+	display: inline-block;
+	padding: 5px;
+	cursor: pointer !important;
+}
+.articlefilters label:hover {
+	text-decoration: none;
+}
+/*article label colors */
+.articlefilters label:nth-of-type(1) {
+	color: #9c9c9b;
+}
+.articlefilters label:nth-of-type(2) {
+	color: #e0687b;
+}
+.articlefilters label:nth-of-type(3) {
+	color: #4baad3;
+}
+.articlefilters label:nth-of-type(4) {
+	color: #aad35b;
+	}
+
+/* article colors */
+.css-filters div:nth-child(9n+1) {
+	background: #e0687b;
+}
+.css-filters div:nth-child(9n+2) {
+	background: #91d7fd;
+}
+.css-filters div:nth-child(9n+3) {
+	background: #b3a0dc;
+}
+.css-filters div:nth-child(9n+4) {
+	background: #6fe1de;
+}
+.css-filters div:nth-child(9n+5) {
+	background: #fdb1a9;
+}
+.css-filters div:nth-child(9n+6) {
+	background: #4093ba;
+}
+.css-filters div:nth-child(9n+7) {
+	background: #e4ca5c;
+}
+.css-filters div:nth-child(9n+8) {
+	background: #919fda;
+}
+.css-filters div:nth-child(9n) {
+	background: #e9b48d;
+}
+.poasts {
+	border-top: 1px solid #C0C0C0;
+	border-left: 1px solid #C0C0C0;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 20px;
+	letter-spacing: 0.06rem;
+	line-height: 1.3rem;
+}
+.poasts p {
+	text-align: left;
+	padding: 5px;
+}
+.poasts h3 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	width: 190px;
+	background-image: linear-gradient(to right, #ebbca5, #de7d9b, #4296bd, #61ddcc);
+	background-clip: text;
+	color: transparent;
+	font-size: 1rem;
+}
+.poasts h4 {
+	font-size: .7rem;
+	margin-top: 0px;
+	color: #9c9c9b;
+}
+.tagged a:nth-of-type(4n+1) {
+    color: #be7b7e;
+}
+.tagged a:nth-of-type(4n+2) {
+    color: #dfbd74;
+}
+.tagged a:nth-of-type(4n+3) {
+    color: #b9ed72;
+}
+.tagged a:nth-of-type(4n) {
+    color: #74dde0;
+}
+.tagged a {
+    padding-right: 10px;
+}
+.tagged a:before {
+    content: '#';
+}
+.tagged {
+	margin-bottom: 10px;
+}
+.captions {
+	color: #9c9c9b;
+	font-size: 0.7rem;
+	line-height: 0.7rem;
+	text-align: center !important;
+	width: 100%;
+	margin-top: -5px;
+}

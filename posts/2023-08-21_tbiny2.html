@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css.css">
+	<link rel="stylesheet" type="text/css" href="cssbox.css">
+	<link rel="icon" type="image/png" href="../assets/logos/favicon.png">
+	<title>
+	7larson dot com - tbiny devlog 2
+	</title>
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="TBINY Devlog 2">
+	<meta property="og:url" content="https://7larson.com/posts/2023-08-21_tbiny2.html/">
+	<meta property="og:image" content="https://7larson.com/assets/logos/linkcard.png">
+	<meta property="og:description" content="Learning fast but moving slow.">
+	<meta property="article:author" content="Sev Larson">
+	<meta property="article:published_time" content="2023-08-21T23:43-06:00">
+	<meta property="article:modified_time" content="2025-01-29T18:06-06:00">
+	<meta property="article:section" content="Gamedev">
+</head>
+<body>
+	<div id="wrapper1">
+	<div id="wrapper2">
+		<h1 id="titlebar">7larson dot com - Macrosoft Internet Exploder</h1>
+		<div id="nav1">
+		<div id="nav2"><span class="sys"><u>F</u>ile</span> <span class="sys"><u>E</u>dit</span> <span class="sys"><u>V</u>iew</span> <span class="sys">F<u>a</u>vorites</span> <span class="sys"><u>T</u>ools</span> <span class="sys"><u>H</u>elp</span></div>
+		</div>
+		<div id="nav3">
+		<div id="nav4"><span class="button inactive"><img src="../assets/ui/back.png"><br>Back</span><span class="button inactive"><img src="../assets/ui/forward.png"><br>Forward</span> <span class="button inactive"><img src="../assets/ui/stop.png"><br>Stop</span> <span class="button inactive"><img src="../assets/ui/refresh.png"><br>Refresh</span></div>
+		</div>
+		<div id="nav5">
+		<div id="nav6"><div class="urltext">A<u>d</u>dress</div> <div id="urlbar1"><div id="urlbar2"><img src="../assets/ui/macrosoft.png"> <span class="url">http://www.7larson.com/blog.html</span></div></div> <div class="urltext"><img src="../assets/ui/go.png"> Go</div><div>
+		</div>
+		</div>
+		</div>
+		<div id="page1"><div id="page2"><p class="logo"></p>
+		<p class="content contentnav"><a href="../index.html" class="homebtn"></a> <a href="../work.html" class="workbtn"></a> <a href="../about.html" class="aboutbtn"></a> <a href="../blog.html" class="blogbtn"></a> <a href="../contact.html" class="contactbtn"></a> <a href="../credits.html" class="creditsbtn"></a></p>
+		<div class="content"><div class="poasts">
+		<h3>tbiny devlog #2</h3>
+		<h4>aug 21 2023 @ near midnight</h4>
+		<p>i should have been at work today, but i woke up with a horrible migraine, so instead, i called out and slept in. when i woke up, the migraine was still pretty bad, not in a state to go to work (aura makes me partially blind), but i really wanted to finish setting up my blog and revamping my website, so i did that. don't look at my commit history, it's a mess. don't migraine & code, kids.</p>
+
+		<p>today i want to get into a little bit about what the story of this game will be, its inspirations, etc. since it's an idea i've had floating around for awhile, so that's what we'll jump into! many eons ago, i got really interested in the concept of a ghost or spirit that lives in the body of or is otherwise attached to another person. this isn't a unique idea of course, it's been done in a lot of media. the thing that originally drew me to the idea was the chronicles of darkness book, <a href="https://en.wikipedia.org/wiki/Geist:_The_Sin-Eaters">geist: the sin eaters</a>, but a lot of other media i've loved over the years has explored similar ideas in different ways, particularly <a href="https://en.wikipedia.org/wiki/Blackwell_(series)">the blackwell series</a> by wadjet eye games.</p>
+
+		<p>i made characters based on this concept, but really wanted to incorporate this idea of a host being the main character, and transgender, and the spirit not knowing how to grapple with that, or something along those lines. in the end i don't think it works well that way, or at least, it's not as interesting. i think there's a lot more room for trans allegory in the spirit being the main character, and being trapped within the body, and having to cope with it being a different body than the one they came from. i want to explore things like gender and mental health through that super cool urban fantasy lense i've always grown up being attracted to, and what better way to do it than through this story!</p>
+		
+		<p>so that's where our story starts. "this body is not yours" is the working title, i don't know if that will be the finished title, but that's what i'm going with for now. you play as a ghost who, in the afterlife, made a deal with a dying person to bring them back to life on the condition that you're bound to them now. and when you wake up, you don't immediately remember that, because memories are a little weird when you don't have a body for a long time. don't think about it too hard, it's better for the narrative if you learn things slowly, i think.</p>
+
+		<p>it'll make sense. maybe.</p>
+		
+		<p>so on to day two of development. first, i learned some more basics of conditional statements and how to edit sentences partway through using them for quality of reading, basically. i think that will come in handy later.</p>
+		
+		<p>next, that CSS thing from yesterday was really starting to bug me, and with some caffeine for my migraine and the powers of google and way too much time, i was able to thankfully figure out a solution. it turns out i just need to only be exporting the story.js once i have the CSS styling the way i want. oops!</p>
+		
+		<p>with that in mind, i went ahead and did some more serious CSS styling, so now the game is nice and moody and has an appropriate light and dark theme :) i usually use light theme for everything, because my eyes suck, but i know most people prefer dark theme and it fits the setting, so here's what it looks like now.</p>
+		
+		<img class="cssbox_thumb" tabindex=1 src="media/woahatheme.png" alt="a screenshot a new dark theme. the main body of the game is black, with the orange glow of a building burning in the background." style="max-width:100%;"><span class="cssbox_full"><img src="media/woahatheme.png"></span>
+		<p class="captions">a screenshot a new dark theme. the main body of the game is black, with the orange glow of a building burning in the background</p>
+		
+		<p>also, i commented out something i want to use later, but left it there so i can use it... later</p>
+		
+		<img class="cssbox_thumb" tabindex=2 src="media/commentedout.png" alt="a screenshot of a comment in inky." style="max-width:100%;"><span class="cssbox_full"><img src="media/commentedout.png"></span><br>
+		<p class="captions">a screenshot of a comment in inky that reads "{not_person: "this only gets said if the host thinks you're not a person! this is a test!"}"</p>
+		<img class="cssbox_thumb" tabindex=3 src="media/surprise_tool.png" alt="a meme of mickey mouse telling the viewer 'it's a surprise tool that will help us later'" style="max-width:100%;"><span class="cssbox_full"><img src="media/surprise_tool.png"></span>
+		<p class="captions">it's a surprise tool that will help us later!</p>
+		
+		<p>i also found out i can use ink's class defining to define lines that i stitched together through scenes using glue (this all sounds ridiculous if you're not familiar with ink, but knots, stitches, and glue are all real terms) so i can change the color of what appears to be a single line in the game, even if it's split into a couple segments in the file. very useful!</p>
+		
+		<img class="cssbox_thumb" tabindex=4 src="media/glue.png" alt="a screenshot showing off some lines glued together and given the class of host." style="max-width:100%;"><span class="cssbox_full"><img src="media/glue.png"></span>
+		<p class="captions">a screenshot showing off some lines glued together and given the class "host"</p>
+		<img class="cssbox_thumb" tabindex=5 src="media/behold_colors.png" alt="the lines given the host class are orange now." style="max-width:100%;"><span class="cssbox_full"><img src="media/behold_colors.png"></span>
+		<p class="captions">behold! colors.</p>
+		
+		<p>this is pretty much it for technical stuff today i think, the rest is just writing! so... this has been a devlog. tune in next time for god knows what!</p>
+		
+		<div class="tagged"><a>game dev</a><a>tbiny</a></div>
+		</div></div>
+		<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = https://7larson.com/posts/2023-08-21_tbiny2.html/;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = /2023-08-21_tbiny2/; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://7larson.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })()
+	;
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	</div>
+	</div>
+</body>
+</html>
