@@ -52,10 +52,21 @@
 <div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="feb7e84c-8d0a-492c-af63-7a0bead5e97b"
-  data-page-id=this.page.url
-  data-page-url=window.location.href
-  data-page-title=document.title
+  data-page-id="{{ PAGE_ID }}"
+  data-page-url="{{ PAGE_URL }}"
+  data-page-title="{{ PAGE_TITLE }}"
 ></div>
+            <script>window.addEventListener('load', function () {
+    let iframe = document.querySelector("#cusdis_thread iframe");
+    if (iframe) {
+        let observer = new MutationObserver(() => {
+            let scrollHeight = iframe.contentWindow.document.body.scrollHeight;
+            iframe.style.height = scrollHeight + "px";
+        });
+        observer.observe(iframe.contentWindow.document.body, { childList: true, subtree: true });
+    }
+});
+            var PAGE_ID = this.page.url</script>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
             	<script>
 	kofiWidgetOverlay.draw('7larson', {
